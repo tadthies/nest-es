@@ -28,6 +28,7 @@ index = indexname + "-" + year + "-" + month
 
 for structure in napi.structures:
   nestinfo['structure'] = structure.name
+  nestinfo['away'] = structure.away
 
   for device in structure.thermostats:
     id = datetime.datetime.now(tzlocal())
